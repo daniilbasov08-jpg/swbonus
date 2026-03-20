@@ -578,7 +578,7 @@
       }
     }
 
-    @media (max-width: 768px){
+@media (max-width: 768px){
   .hero{
     padding:20px 16px;
   }
@@ -602,16 +602,16 @@
     text-align:center;
   }
 
-  /* 🔽 МЕНЬШАЯ МОДАЛКА */
+  /* МЕНЬШЕ МОДАЛКА */
   .modal-content{
-    max-width:420px;       /* было 520px */
-    padding:10px;          /* было 14px */
+    max-width:400px;
+    padding:10px;
     border-radius:18px;
   }
 
   .modal h2{
     font-size:18px;
-    margin-bottom:10px;
+    margin-bottom:8px;
   }
 
   .carousel-wrap{
@@ -619,50 +619,47 @@
   }
 
   .carousel-btn{
-    width:34px;
-    height:34px;
+    width:32px;
+    height:32px;
     font-size:16px;
   }
 
-  /* 🔽 КОМПАКТНЫЕ СЛАЙДЫ */
+  /* КОМПАКТНЫЕ СЛАЙДЫ */
   .slide{
     padding:8px;
-    gap:10px;
+    gap:8px;
     flex-direction:column;
   }
 
   .slide-image{
-    min-height:160px;   /* было 190px */
+    min-height:150px;
   }
 
-  /* 🔽 УБРАЛИ БОЛЬШОЙ РАЗРЫВ */
+  /* УБРАН ВЕСЬ ЗАЗОР */
   .slide-info{
-    flex:1 1 auto;
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-start; /* ключевое изменение */
-    gap:8px;                    /* меньше расстояние */
+    gap:0;
   }
 
   .step-badge{
-    margin-bottom:6px; /* было 10px */
+    margin-bottom:0;
   }
 
   .step-text{
+    margin:0;
     font-size:15px;
-    line-height:1.35;
+    line-height:1.3;
   }
 
   .step-cta{
-    font-size:15px;
-    min-height:42px;
-    padding:12px 14px;
-    border-radius:14px;
-    margin-top:0; /* чтобы не отталкивалась вниз */
+    font-size:14px;
+    min-height:40px;
+    padding:10px 12px;
+    border-radius:12px;
+    margin-top:0;
   }
 
   .dots{
-    margin-top:10px;
+    margin-top:8px;
   }
 }
 
