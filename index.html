@@ -638,41 +638,45 @@
     font-size:16px;
   }
 
-  .slide{
-    padding:8px;
-    gap:8px;
-    flex-direction:column;
-  }
+  /* 🔥 УЖИМАЕМ ВЕРТИКАЛЬ */
+.slide{
+  gap:6px;       /* меньше расстояние между блоками */
+  padding:6px;   /* компактнее */
+}
 
-  .slide-image{
-    min-height:150px;
-    max-height:240px;  /* убирает сильную вытянутость */
-  }
+/* 🔥 ДЕЛАЕМ КАРТИНКУ БОЛЬШЕ → влияет на 3:4 */
+.slide-image{
+  min-height:180px;
+  max-height:220px; /* чуть выше чем было */
+}
 
-  .slide-info{
-  gap:0; /* убрали расстояние полностью */
+/* 🔥 УБИРАЕМ ВСЕ ОТСТУПЫ МЕЖДУ ТЕКСТОМ И КНОПКОЙ */
+.slide-info{
+  gap:0;
 }
 
 .step-badge{
-  margin-bottom:0; /* убрали отступ */
+  margin-bottom:0;
 }
 
 .step-text{
   margin:0;
+  line-height:1.2;
   font-size:14px;
-  line-height:1.2; /* чуть плотнее */
 }
 
+/* 🔥 КНОПКА ПРЯМ ПОД ТЕКСТОМ */
 .step-cta{
-  margin-top:0; /* убрали отступ сверху */
-  min-height:38px; /* меньше кнопка */
-  padding:8px 10px; /* компактнее */
+  margin-top:0;
+  min-height:36px;
+  padding:8px 10px;
   font-size:13px;
 }
 
-  .dots{
-    margin-top:8px;
-  }
+/* 🔥 УБИРАЕМ ЛИШНИЙ ВОЗДУХ СНИЗУ */
+.dots{
+  margin-top:6px;
+}
 }
 
     @media (prefers-reduced-motion: reduce){
